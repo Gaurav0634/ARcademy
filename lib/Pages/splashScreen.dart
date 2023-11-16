@@ -11,7 +11,9 @@ class splashScreen extends StatelessWidget {
       Navigator.pushNamed(context, '/introVideo');
     });
     return Scaffold(
+
       body: Container(
+
         color: Colors.black,
         child:
           Center(

@@ -38,9 +38,13 @@ dependencies:
   arcore_flutter_plugin: ^0.1.0
   video_player: ^2.7.2
   animated_text_kit: ^4.2.2
-  audioplayers: ^5.1.0
-  flutter_sound: ^9.2.13
+  webview_flutter: ^4.4.1
+  model_viewer_plus: ^1.7.0
+
   flutter_launcher_icons: ^0.13.1
+  font_awesome_flutter: ^10.6.0
+
+
 
 flutter_icons:
   android: true
@@ -75,6 +79,8 @@ flutter:
     - assets/videos/
     - assets/icons/
     - assets/audios/
+    - assets/models/
+    - assets/models/chemistry/
 
 
   # An image asset can refer to one or more resolution-specific "variants", see
@@ -89,16 +95,21 @@ flutter:
   # list giving the asset and other descriptors for the font. For
   # example:
   fonts:
-    - family: basis
+    - family: helvetica
       fonts:
-        - asset: assets/fonts/basis33.ttf
+        - asset: assets/fonts/HelveticaNeueUltraLight.ttf
+    - family: neue
+      fonts:
+        - asset: assets/fonts/NeueMachina-Regular.otf
+    - family: helveticamedium
+      fonts:
+        - asset: assets/fonts/HelveticaNeueMedium.ttf
+    - family: helveticaitalic
+      fonts:
+        - asset: assets/fonts/HelveticaNeueItalic.ttf
   #       - asset: fonts/Schyler-Italic.ttf
   #         style: italic
-    - family: tommarow
-      fonts:
-        - asset: assets/fonts/Tomorrow-Regular.ttf
-  #       - asset: fonts/TrajanPro_Bold.ttf
-  #         weight: 700
+
   #
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/custom-fonts/#from-packages
